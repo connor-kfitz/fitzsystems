@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fitzsystems",
-  description: "Fitzsystems is a software development company specializing in custom solutions for businesses of all sizes."
+  description: "Fitzsystems is a software development company specializing in custom solutions for businesses of all sizes.",
+  icons: { icon: '/favicon.svg' }
 }
 
 export default function RootLayout({
