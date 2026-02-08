@@ -5,3 +5,26 @@ export const navigationLinks = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }
 ];
+
+export const services = [
+  {
+    title: "Web Development",
+    description:
+      "Fast, accessible, and responsive web applications built with modern frameworks and best practices."
+  },
+  {
+    title: "Custom Software",
+    description:
+      "Tailored solutions for complex business problems. From internal tools to customer-facing platforms."
+  },
+  {
+    title: "UI/UX Implementation",
+    description:
+      "Pixel-perfect implementation of designs with attention to interaction details, accessibility, and performance."
+  },
+  {
+    title: "Maintenance & Scaling",
+    description:
+      "Ongoing support, performance optimization, and architecture evolution as your product grows."
+  }
+];
