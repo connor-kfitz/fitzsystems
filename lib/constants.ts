@@ -34,6 +34,14 @@ export const projects = [
     title: "South West Exposures",
     description: "Medical isotope shield catalouge and inquiry system. Custom admin content management system for adding, updating, and deleting products. Built for scalability",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    client: "South West Exposures",
+    problem: "The existing WordPress site for South West Exposures was outdated, with a confusing UI, poor SEO performance, and static content that made updates difficult. It lacked the design sophistication, scalability, and technical foundation needed to effectively showcase complex products and support long-term growth.",
+    solution: "The solution was a complete rebuild using Next.js and PostgreSQL, featuring a modern, responsive design, dynamic content management, SEO-optimized pages, and high-quality 3D product visuals. This allowed the team to easily update content, improve search visibility, and present complex products clearly to users.",
+    outcomes: [
+      "Indexed pages increased 60%+, with key products ranking top 10–20.",
+      "Content updates reduced by ~98%, no developer needed.",
+      "Polished, responsive design and 3D visuals"
+    ],
     slug: "south-west-exposures"
   }
 ];
