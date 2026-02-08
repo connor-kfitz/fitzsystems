@@ -7,14 +7,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
-];
+import { navigationLinks } from "@/lib/constants";
 
 export function Navigation() {
   const pathname = usePathname();
@@ -31,7 +24,7 @@ export function Navigation() {
         </Link>
 
         <ul className="hidden items-center gap-6 md:flex">
-          {links.map((link) => (
+          {navigationLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
@@ -85,7 +78,7 @@ export function Navigation() {
       {mobileOpen && (
         <div className="border-t border-border bg-background px-6 pb-6 pt-4 md:hidden">
           <ul className="flex flex-col gap-4">
-            {links.map((link) => (
+            {navigationLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
