@@ -28,3 +28,12 @@ export const services = [
       "Ongoing support, performance optimization, and architecture evolution as your product grows."
   }
 ];
+
+export const projects = [
+  {
+    title: "South West Exposures",
+    description: "Medical isotope shield catalouge and inquiry system. Custom admin content management system for adding, updating, and deleting products. Built for scalability",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    slug: "south-west-exposures"
+  }
+];

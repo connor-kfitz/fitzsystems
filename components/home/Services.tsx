@@ -8,7 +8,7 @@ export function Services() {
       <div className="mx-auto max-w-5xl px-6">
         <Separator className="mb-20"/>
 
-        {/* Section Header */}
+        {/* Services Header */}
         <p className="text-sm font-medium uppercase tracking-wider text-muted-foreground">
           Services
         </p>
@@ -35,7 +35,7 @@ export function Services() {
             </Card>
           ))}
         </div>
-        
+
       </div>
     </section>
   );
