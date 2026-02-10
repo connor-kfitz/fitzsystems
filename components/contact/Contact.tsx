@@ -6,10 +6,6 @@ import ContactForm from "./ContactForm";
 
 import { useState } from "react";
 
-// Todo: Integrate with email service
-// Todo: Integrate with scheduling service for calls
-// Todo: Use ZOD form validation and error handling
-
 export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false);

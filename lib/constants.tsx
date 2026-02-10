@@ -145,3 +145,11 @@ export const process = [
     description: "Thorough testing, performance optimization, and deployment. Post-launch support ensures everything runs smoothly as real users arrive."
   }
 ];
+
+export const budgetOptions = [
+  { value: "5K", label: "Under $5,000" },
+  { value: "5-10k", label: "$5,000 - $10,000" },
+  { value: "10-25k", label: "$10,000 - $25,000" },
+  { value: "25-50k", label: "$25,000 - $50,000" },
+  { value: "50k+", label: "$50,000+" }
+];

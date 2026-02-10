@@ -1,5 +1,7 @@
 import { email } from "@/lib/constants";
 
+// Todo: Integrate with scheduling service for calls
+
 export default function ContactInfo() {
   return (
     <div>
