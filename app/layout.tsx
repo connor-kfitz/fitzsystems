@@ -1,3 +1,5 @@
+import ComingSoonPage from "./coming-soon/page";
+
 import { Navigation } from "@/components/navigation/Navigation";
 import { Footer } from "@/components/shared/Footer";
 import type { Metadata } from "next";
@@ -26,14 +28,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const comingSoon = process.env.NEXT_PUBLIC_COMING_SOON === "true";
+
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navigation/>
-        {children}
-        <Footer/>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {comingSoon
+          ? <ComingSoonPage/>
+          : <>
+              <Navigation/>
+              {children}
+              <Footer/>
+            </>
+        }
       </body>
     </html>
   );
