@@ -5,7 +5,7 @@ interface TestimonialProps {
   testimonials: Testimonial[];
 }
 
-export function Testimonials({ testimonials }: TestimonialProps) {
+export default function Testimonials({ testimonials }: TestimonialProps) {
 
   if (testimonials.length === 0) return null;
 

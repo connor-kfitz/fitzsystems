@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-export function CallToAction() {
+export default function CallToAction() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-5xl px-6">

@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/ca
 import { Separator } from "@/components/ui/separator";
 import { services } from "@/lib/constants";
 
-export function Services() {
+export default function Services() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-5xl px-6">

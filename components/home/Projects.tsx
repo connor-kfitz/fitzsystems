@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { projects } from "@/lib/constants";
 
-export function Projects() {
+export default function Projects() {
   return (
     <section className="py-20">
       <div className="mx-auto max-w-5xl px-6">

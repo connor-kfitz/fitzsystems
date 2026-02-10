@@ -1,7 +1,6 @@
 import PageHeader from "@/components/shared/PageHeader";
 import ProjectCards from "@/components/projects/ProjectCards";
-
-import { CallToAction } from "@/components/shared/CallToAction";
+import CallToAction from "@/components/shared/CallToAction";
 
 export default function ProjectsPage() {
   return (

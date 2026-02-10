@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className="pb-20 pt-32">
       <div className="mx-auto max-w-5xl px-6">
