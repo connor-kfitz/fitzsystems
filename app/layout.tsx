@@ -28,7 +28,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const comingSoon = process.env.NEXT_PUBLIC_COMING_SOON === "true";
+
+  const comingSoon = process.env.COMING_SOON === "true";
 
   return (
     <html lang="en">
