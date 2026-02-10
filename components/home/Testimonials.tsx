@@ -11,7 +11,7 @@ export default function Testimonials({ testimonials }: TestimonialProps) {
 
   return (
     <section className="py-20">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <Separator className="mb-20"/>
 
         {/* Testimonials Header */}

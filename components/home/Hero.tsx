@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
     <section className="pb-20 pt-32">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
 
         {/* Title */}
         <h1 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">

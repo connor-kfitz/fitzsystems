@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 export default function CallToAction() {
   return (
     <section className="py-20">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <Separator className="mb-20"/>
 
         {/* Call to Action Header */}

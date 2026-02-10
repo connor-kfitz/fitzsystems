@@ -6,7 +6,7 @@ import { navigationLinks } from "@/lib/constants";
 export function Footer() {
   return (
     <footer className="pb-12 pt-20">
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-6xl px-6">
         <Separator className="mb-12"/>
 
         {/* Info */}
