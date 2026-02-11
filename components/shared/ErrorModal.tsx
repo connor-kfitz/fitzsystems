@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
+import { useEffect } from "react";
 
 type ErrorModalProps = {
   open: boolean;
@@ -12,6 +13,19 @@ type ErrorModalProps = {
 }
 
 export default function ErrorModal({ open, title = "Error", message = "An error occurred.", onClose }: ErrorModalProps) {
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+
+    return () => {
+      document.body.style.overflowY = "scroll";
+    }
+  }, [open]);
+  
   if (!open) return null;
 
   return (
