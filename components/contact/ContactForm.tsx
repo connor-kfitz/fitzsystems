@@ -8,16 +8,14 @@ import { budgetOptions } from "@/lib/constants";
 
 const ContactSchema = z.object({
   name: z.string().min(1, "Name is required"),
-  email: z.string().email("Enter a valid email"),
+  email: z.email("Enter a valid email"),
   company: z.string().optional(),
   budget: z.string().optional(),
   message: z.string().min(1, "Message is required"),
 });
 
-type ContactFormData = z.infer<typeof ContactSchema>;
-
 interface ContactFormProps {
-  onSubmit: () => void;
+  onSubmit: (data: ContactFormData) => Promise<void>;
 }
 
 export default function ContactForm({ onSubmit }: ContactFormProps) {
@@ -34,11 +32,9 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
     }
   });
 
-  const onSubmitHandler: SubmitHandler<ContactFormData> = (data) => {
-    onSubmit();
-    // Todo: Integrate with email service
-    console.log(data);
-  };
+  const onSubmitHandler: SubmitHandler<ContactFormData> = async (data) => {
+    await onSubmit(data);
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmitHandler)} className="flex flex-col gap-6">
@@ -154,13 +150,28 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="inline-flex w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto disabled:opacity-60"
+        className="cursor-pointer inline-flex w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 sm:w-auto disabled:opacity-60"
       >
-        Send Message
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
-          <path d="M5 12h14"/>
-          <path d="m12 5 7 7-7 7"/>
-        </svg>
+        {isSubmitting 
+          ? (
+              <span className="flex items-center gap-2">
+                <svg className="h-4 w-4 animate-spin text-primary-foreground" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+                </svg>
+                Sending...
+              </span>
+            ) 
+          : (
+              <>
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
+                  <path d="M5 12h14"/>
+                  <path d="m12 5 7 7-7 7"/>
+                </svg>
+              </>
+            )
+        }
       </button>
 
     </form>
