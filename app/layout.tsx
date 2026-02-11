@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
 
   const comingSoon = process.env.COMING_SOON === "true";
-
+  console.log(comingSoon ? "COMING_SOON mode is enabled. The site will display the Coming Soon page." : "COMING_SOON mode is disabled. The full site will be accessible.");
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
