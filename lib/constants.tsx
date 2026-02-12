@@ -7,6 +7,8 @@ export const navigationLinks = [
 
 export const email = "connorkfitzsimmons@fitzsystems.ca";
 
+export const calendlyUrl = "https://calendly.com/connorkfitzsimmons-fitzsystems/30min";
+
 export const services = [
   {
     title: "Web Development",
