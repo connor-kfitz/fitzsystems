@@ -13,7 +13,7 @@ export default function Services() {
           Services
         </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-          What I build
+          What We Build
         </h2>
         <p className="mt-2 max-w-lg text-sm text-muted-foreground">
           End-to-end development services with a focus on quality, performance,

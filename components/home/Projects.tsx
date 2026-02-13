@@ -18,7 +18,7 @@ export default function Projects() {
               Projects
             </p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight text-foreground">
-              Selected work
+              Selected Work
             </h2>
           </div>
           <Link

@@ -14,8 +14,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className="mt-4 max-w-xl text-pretty text-base leading-relaxed text-muted-foreground">
-          Fitzsystems builds reliable, maintainable web applications for
-          businesses and startups.
+          Fitzsystems builds reliable, maintainable web applications designed to scale with your business.
         </p>
 
         {/* Call To Actions */}

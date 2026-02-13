@@ -12,11 +12,10 @@ export default function CallToAction() {
         {/* Call to Action Header */}
         <div className="max-w-lg">
           <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-            {"Let\u2019s build something great together"}
+            Get Started
           </h2>
           <p className="mt-3 text-sm text-muted-foreground">
-            Have a project in mind? I would love to hear about it. Reach out and
-            let us discuss how I can help bring your vision to life.
+            Have a project in mind? Let’s discuss requirements.
           </p>
 
           {/* Call to Action Buttons */}

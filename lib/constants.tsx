@@ -12,7 +12,7 @@ export const calendlyUrl = "https://calendly.com/connorkfitzsimmons-fitzsystems/
 export const services = [
   {
     title: "Web Development",
-    description: "Fast, accessible, and responsive web applications built with modern frameworks and best practices."
+    description: "Fast, accessible, and responsive web applications built with modern frameworks and databases."
   },
   {
     title: "Custom Software",
@@ -20,7 +20,7 @@ export const services = [
   },
   {
     title: "UI/UX Implementation",
-    description: "Pixel-perfect implementation of designs with attention to interaction details, accessibility, and performance."
+    description: "Accurate translation of design systems into functional interfaces, ensuring refined interactions, accessibility compliance, and performance."
   },
   {
     title: "Maintenance & Scaling",
@@ -31,7 +31,7 @@ export const services = [
 export const projects = [
   {
     title: "South West Exposures",
-    description: "Medical isotope shield catalouge and inquiry system. Custom admin content management system for adding, updating, and deleting products. Built for scalability",
+    description: "Medical isotope shield catalogue and inquiry system with a fully customized content management dashboard for managing products efficiently. Engineered for scalability, maintainability, and long-term growth.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     client: "South West Exposures",
     problem: "The existing WordPress site for South West Exposures was outdated, with a confusing UI, poor SEO performance, and static content that made updates difficult. It lacked the design sophistication, scalability, and technical foundation needed to effectively showcase complex products and support long-term growth.",
