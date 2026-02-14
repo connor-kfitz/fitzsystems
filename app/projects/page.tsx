@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       <PageHeader
         label="Portfolio"
         title="Featured Projects"
-        description="A collection of recent work spanning web applications and custom software"
+        description="A collection of shipped applications built to meet specific business needs."
       />
       <ProjectCards/>
       <CallToAction/>
