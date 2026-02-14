@@ -86,6 +86,19 @@ export default function ProjectCards() {
                 </div>
 
               </div>
+
+              {/* Application Link */}
+              <footer className="mt-6 flex items-center justify-between">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  View Application
+                </a>
+              </footer>
+              
             </article>
           ))}
         </div>

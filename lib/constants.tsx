@@ -41,6 +41,7 @@ export const projects = [
       "Content updates reduced by ~98%, no developer needed.",
       "Polished, responsive design and 3D visuals"
     ],
+    liveUrl: "https://swexposures.com",
     slug: "south-west-exposures"
   }
 ];
