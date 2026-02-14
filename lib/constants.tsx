@@ -48,15 +48,16 @@ export const projects = [
 export const extendedServices = [
   {
     title: "Web Development",
-    description: "Modern, fast, and accessible web applications built with the latest frameworks and best practices. From marketing sites to complex web apps, every project is engineered for performance and maintainability.",
+    description: "Modern, fast, and accessible web applications built with reliable frameworks and best practices. From marketing sites to complex web apps, every project is engineered for performance and maintainability.",
     audience: "Startups, growing businesses, and established companies looking for a reliable web presence or complex web application.",
     features: [
       "Server-rendered and static applications",
-      "Progressive web app capabilities",
       "SEO optimization and Core Web Vitals",
-      "Responsive, mobile-first design",
+      "Responsive design and cross-device compatibility",
       "CMS integration and content management",
-      "API development and third-party integrations"
+      "API development and third-party integrations",
+      "Progressive web app capabilities"
+
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -71,12 +72,12 @@ export const extendedServices = [
     description: "Purpose-built software solutions designed around your specific business needs. No templates, no compromises. Every feature is crafted to solve real problems and integrate with your existing workflows.",
     audience: "Companies with unique business processes that off-the-shelf solutions cannot adequately serve.",
     features: [
+      "Authentication and authorization systems",
+      "Custom API and microservice architecture",
       "Internal tools and dashboards",
       "Data processing and automation",
-      "Custom API and microservice architecture",
       "Legacy system modernization",
       "Database design and optimization",
-      "Authentication and authorization systems"
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -94,7 +95,7 @@ export const extendedServices = [
       "Design system development",
       "Interaction design and animation",
       "Accessibility compliance (WCAG)",
-      "Cross-browser and device testing",
+      "Cross-browser and device compatibility",
       "Component library architecture"
     ],
     icon: (
@@ -111,10 +112,10 @@ export const extendedServices = [
     features: [
       "Performance monitoring and optimization",
       "Security updates and vulnerability patching",
-      "Feature development and iteration",
-      "Infrastructure scaling and migration",
       "Code refactoring and technical debt reduction",
-      "Documentation and knowledge transfer"
+      "Documentation and knowledge transfer",
+      "Feature development and iteration",
+      "Infrastructure scaling and migration"
     ],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -129,22 +130,22 @@ export const process = [
   {
     step: "01",
     title: "Discovery",
-    description: "We discuss your project goals, constraints, timeline, and technical requirements. I ask the right questions to fully understand the problem before writing a single line of code."
+    description: "We discuss your project goals, constraints, timeline, and technical requirements. We ask the right questions to fully understand the problem."
   },
   {
     step: "02",
     title: "Proposal",
-    description: "I deliver a clear project scope, architecture overview, timeline, and transparent pricing. No surprises, no hidden costs."
+    description: "We deliver a clear project scope, architecture overview, timeline, and price."
   },
   {
     step: "03",
     title: "Build",
-    description: "Development happens in iterative sprints with regular demos and check-ins. You see progress weekly and can provide feedback in real-time."
+    description: "Development happens in iterative sprints. You see progress bi-weekly demos and provide feedback in real-time."
   },
   {
     step: "04",
     title: "Launch & Support",
-    description: "Thorough testing, performance optimization, and deployment. Post-launch support ensures everything runs smoothly as real users arrive."
+    description: "Performance optimization, deployment, and post-launch support."
   }
 ];
 

@@ -9,7 +9,7 @@ export default function ServicesPage() {
       <PageHeader
         label="Services"
         title="What We Offer"
-        description="Every engagement is custom. I focus on understanding your specific needs and building thoughtful, well-architected solutions."
+        description="Each project is custom-built, grounded in a clear understanding of your requirements."
       />
       <ServiceCards/>
       <Process/>
