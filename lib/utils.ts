@@ -27,3 +27,8 @@ export function createContactMessage(data: ContactFormData) {
     </div>
   `;
 }
+
+export function rgbaGenerator(rgb: string, a: number) {
+  return `rgba(${rgb},${a})`;
+} 
+

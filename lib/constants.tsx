@@ -1,3 +1,5 @@
+import { rgbaGenerator } from "./utils";
+
 export const navigationLinks = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
@@ -156,4 +158,32 @@ export const budgetOptions = [
   { value: "10-25k", label: "$10,000 - $25,000" },
   { value: "25-50k", label: "$25,000 - $50,000" },
   { value: "50k+", label: "$50,000+" }
+];
+
+const heroColors = {
+  purple: "99,102,241",
+  green: "16,185,129",
+  blue: "59,130,246",
+  pink: "244,114,182"
+};
+
+const heroAlphas = {
+  strong: 0.24,
+  medium: 0.20,
+  light: 0.18
+}
+
+export const heroShapes = [
+  { left: 6, size: 28, delay: 0, dur: 12, r: 6, color: rgbaGenerator(heroColors.purple, heroAlphas.medium) },
+  { left: 18, size: 48, delay: 1.2, dur: 14, r: 999, color: rgbaGenerator(heroColors.green, heroAlphas.medium) },
+  { left: 30, size: 20, delay: 0.6, dur: 10, r: 4, color: rgbaGenerator(heroColors.blue, heroAlphas.medium) },
+  { left: 42, size: 64, delay: 2.4, dur: 16, r: 8, color: rgbaGenerator(heroColors.pink, heroAlphas.light) },
+  { left: 54, size: 36, delay: 0.8, dur: 11, r: 10, color: rgbaGenerator(heroColors.purple, heroAlphas.strong) },
+  { left: 66, size: 22, delay: 1.8, dur: 13, r: 999, color: rgbaGenerator(heroColors.green, heroAlphas.light) },
+  { left: 78, size: 44, delay: 0.2, dur: 15, r: 6, color: rgbaGenerator(heroColors.blue, heroAlphas.light) },
+  { left: 86, size: 30, delay: 2.0, dur: 12, r: 999, color: rgbaGenerator(heroColors.pink, heroAlphas.medium) },
+  { left: 12, size: 18, delay: 3.0, dur: 9, r: 4, color: rgbaGenerator(heroColors.purple, heroAlphas.light) },
+  { left: 26, size: 50, delay: 2.6, dur: 17, r: 12, color: rgbaGenerator(heroColors.green, heroAlphas.light) },
+  { left: 48, size: 26, delay: 1.0, dur: 10, r: 999, color: rgbaGenerator(heroColors.blue, heroAlphas.light) },
+  { left: 70, size: 40, delay: 2.8, dur: 14, r: 8, color: rgbaGenerator(heroColors.pink, heroAlphas.light) }
 ];
