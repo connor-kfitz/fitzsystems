@@ -69,7 +69,7 @@ export default function ContactInfo() {
               Response Time
             </p>
             <p className="text-sm text-muted-foreground">
-              Within 24 hours, usually sooner
+              Within 24 hours
             </p>
           </div>
         </div>
