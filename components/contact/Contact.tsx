@@ -39,7 +39,7 @@ export default function Contact() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid gap-16 lg:grid-cols-[1fr_1.2fr]">          
+        <div className="grid gap-8 lg:gap-16 lg:grid-cols-[1fr_1.2fr]">          
           <ContactInfo/>
           <div className="rounded-xl border border-border bg-card p-8 md:p-10">
             {submitted ? (
