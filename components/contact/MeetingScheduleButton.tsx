@@ -27,7 +27,7 @@ export default function MeetingScheduleButton() {
 
   return (
     <>
-      <div className = "mt-10 rounded-lg border border-border bg-secondary/30 p-6">
+      <div className="mt-10 rounded-lg border border-border bg-secondary/30 p-6">
         <p className="text-sm font-semibold text-foreground">
           Prefer to talk?
         </p>

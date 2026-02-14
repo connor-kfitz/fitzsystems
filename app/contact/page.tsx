@@ -7,7 +7,7 @@ export default function ContactPage() {
       <PageHeader
         label="Contact"
         title="Start a conversation"
-        description="Have a project in mind? Fill out the form below and I will get back to you within 24 hours."
+        description="Have a project in mind? Fill out the form below and we will get back to you."
       />
       <Contact/>
     </main>

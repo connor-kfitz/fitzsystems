@@ -137,7 +137,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? 'message-error' : undefined}
           className="w-full resize-none rounded-md border border-border bg-secondary/30 px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-          placeholder="Tell me about your project, goals, and timeline..."
+          placeholder="Tell us about your project, goals, and timeline..."
        />
         {errors.message ? (
           <p id="message-error" className="mt-1 text-sm text-destructive/60">

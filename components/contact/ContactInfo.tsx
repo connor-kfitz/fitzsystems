@@ -11,8 +11,8 @@ export default function ContactInfo() {
         {"Let's work together"}
       </h2>
       <p className="mt-4 leading-relaxed text-muted-foreground">
-        Whether you have a detailed spec or just a rough idea, I am
-        happy to discuss how I can help. Every project starts with a
+        Whether you have a detailed spec or just a rough idea, we are
+        happy to discuss how we can help. Every project starts with a
         conversation.
       </p>
 
