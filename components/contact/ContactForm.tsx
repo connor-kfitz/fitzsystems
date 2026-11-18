@@ -12,6 +12,7 @@ const ContactSchema = z.object({
   company: z.string().optional(),
   budget: z.string().optional(),
   message: z.string().min(1, "Message is required"),
+  website: z.string().optional()
 });
 
 interface ContactFormProps {
@@ -19,7 +20,7 @@ interface ContactFormProps {
 }
 
 export default function ContactForm({ onSubmit }: ContactFormProps) {
-  const { 
+  const {
     register, handleSubmit, control, formState: { errors, isSubmitting }
   } = useForm<ContactFormData>({
     resolver: zodResolver(ContactSchema),
@@ -28,7 +29,8 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       email: "",
       company: "",
       budget: "",
-      message: ""
+      message: "",
+      website: ""
     }
   });
 
@@ -38,6 +40,17 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
 
   return (
     <form onSubmit={handleSubmit(onSubmitHandler)} className="flex flex-col gap-6">
+
+      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          {...register("website")}
+        />
+      </div>
       <div className="grid gap-6 sm:grid-cols-2">
 
         {/* Name Input Field */}

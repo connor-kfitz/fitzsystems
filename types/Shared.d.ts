@@ -11,6 +11,7 @@ type ContactFormData = {
   company?: string;
   budget?: string;
   message: string;
+  website?: string;
 }
 
 type ModalErrorState = {

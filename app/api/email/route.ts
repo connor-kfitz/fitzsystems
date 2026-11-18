@@ -5,7 +5,11 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
-    const { name, message } = await req.json();
+    const { name, message, website } = await req.json();
+
+    if (website) {
+      return NextResponse.json({ success: true });
+    }
 
     const data = await resend.emails.send({
       from: `${name} <noreply@fitzsystems.ca>`,
